@@ -1,0 +1,180 @@
+.organize{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @include media($lg){
+        padding-top: 0;
+    }
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        @include media($lg){
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        &__title{
+            width: 330px;
+            font-family: $grap;
+            font-size: 48px;
+            line-height: 55px;
+            color: var(--black);
+            margin-bottom: 25px;
+            @include media($lg){
+                width: 300px;
+                text-align: center;
+            }
+        }
+        &__text{
+            width: 480px;
+            font-family: $grap;
+            font-size: 28px;
+            line-height: 40px;
+            color: var(--gray);
+            margin-bottom: 40px;
+            @include media($lg){
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+    &__top__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media($lg){
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__bm{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        @include media($lg){
+            justify-content: center;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+        }
+    }
+    &__left__img{
+        @include media($md){
+            width: 300px;
+            margin-top: 20px;
+        }
+    }
+    &__right__img{
+        width: 670px;
+        height: 510px;
+        @include media($md){
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+        }
+    }
+    &__bm__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media($lg){
+            align-items: center;
+        }
+    }
+    &__fingertips{
+        font-family: $grap;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--black);
+        margin-bottom: 15px;
+    }
+    &__bm__title{
+        width: 330px;
+        font-family: $grap;
+        font-size: 48px;
+        line-height: 55px;
+        color: var(--black);
+        margin-bottom: 35px;
+        @include media($lg){
+            width: 300px;
+            text-align: center;
+        }
+    }
+    &__news{
+        font-family: $grap;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--black);
+    }
+    &__news__text{
+        font-family: $grap;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--gray);
+        margin-bottom: 35px;
+    }
+    &__bm__contact{
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        @include media($lg){
+            height: 100px;
+            width: 300px;
+            flex-direction: column;
+        }
+    }
+    &__lebel{
+        width: 270px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F4F4;
+        border: 1px solid #E8E8E8;
+        @include media($md){
+            width: 200px;
+            height: 50px;
+        }
+    }
+    &__email{
+        border: none;
+        background: #F4F4F4;
+        color: #18171D;
+    }
+    &__bm__button{
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--blue);
+        border-radius: 35px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background: white;
+            border: 3px solid var(--blue);
+            .organize__bm__link{
+                color: var(--blue);
+            }
+        }
+        @include media($lg){
+            margin-top: 20px;
+        }
+    }
+    &__bm__link{
+        font-family: $grap;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}

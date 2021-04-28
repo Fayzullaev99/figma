@@ -1,0 +1,24 @@
+header.header 
+ .container 
+  .header__nav
+   .header__logo 
+    img(src="images/logo.webp", alt="please waiting").header__logo-figma
+   button.header__btn
+    span.header__btn-line
+    span.header__btn-line
+    span.header__btn-line 
+   .header__content
+    .nav-left
+     ul.nav-left__list 
+      each link in['Home','Product','Pricing','About','Contact']
+       li
+        a(href="#!").nav-left__link= link 
+    .nav-right
+     i.fab.nav-right__fb 
+     i.fab.nav-right__tw 
+     i.fab.nav-right__in
+  .header__info 
+   h1.header__title The best products start with Figma
+   p.header__text Most calendars are designed for teams. Slate is designed for freelancers
+   .button
+    a(href="#!").button__link  Try For Free

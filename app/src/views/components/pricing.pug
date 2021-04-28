@@ -1,0 +1,42 @@
+section.pricing 
+ .container
+  h2.pricing__title Pricing
+  p.pricing__text Most calendars are designed for teams. Slate is designed for freelancers
+  .pricing__flexs 
+    .pricing__flex
+     h5.pricing__flex__title  FREE
+     p.pricing__flex__text Organize across all apps by hand
+     .pricing__flex__div 
+      h2.pricing__flex__num 0
+      .pricing__flex__duration 
+       .pricing__flex__price $
+       .pricing__flex__time Per Month
+     each p in['Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature']
+      p.pricing__flex__client= p
+     button.button 
+      a(href="#!").button__link Order Now 
+    .pricing__flex
+     h5.pricing__flex__title STANDARD
+     p.pricing__flex__text Organize across all apps by hand
+     .pricing__flex__div 
+      h2.pricing__flex__num 10
+      .pricing__flex__duration 
+       .pricing__flex__price $
+       .pricing__flex__time Per Month
+     each p in['Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature']
+      p.pricing__flex__client= p
+     button.button 
+      a(href="#!").button__link Order Now 
+    .pricing__flex
+     h5.pricing__flex__title BUSINESS
+     p.pricing__flex__text Organize across all apps by hand
+     .pricing__flex__div 
+      h2.pricing__flex__num 0
+      .pricing__flex__duration 
+       .pricing__flex__price $
+       .pricing__flex__time Per Month
+     each p in['Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature','Pricing Feature']
+      p.pricing__flex__client= p
+     button.button 
+      a(href="#!").button__link Order Now 
+  

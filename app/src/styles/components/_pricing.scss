@@ -1,0 +1,132 @@
+.pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: max-content;
+    min-height: max-content;
+    background: #252B42;
+    &__title{
+        font-family: $grap;
+        font-weight: 400;
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 27px;
+        color: var(--wheat);
+    }
+    &__text{
+        width: 480px;
+        margin: auto;
+        font-family: $grap;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 90px;
+        color: var(--wheat);
+        @include media($md){
+            width: 300px;
+        }
+    }
+    &__flexs{
+        width: 100%;
+        height: 690px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media($xxl){
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    &__flex{
+        width: 330px;
+        height: 600px;
+        background: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        margin: 15px;
+        transition: 0.3s;
+        @include media($xxl){
+            width: 300px;
+            height: 450px;
+        }
+        @include media($md){
+            width: 250px;
+            height: 300px;
+            padding: 5px;
+        }
+        &:hover{
+            background: var(--blue);
+            transform: scale(1.3, 1.2);
+            .pricing__flex__title{
+                font-size: 30px;
+            }
+            .button{
+                background:white;
+            }
+            .button__link{
+                color: var(--blue);
+            }
+        }
+        &__title{
+            font-family: $grap;
+            font-weight: 700;
+            color: var(--black);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        &__text{
+          font-family: $grap;
+          line-height: 23px;
+          color: var(--gray);
+          text-align: center;
+          margin-bottom: 15px;
+          @include media($md){
+              margin-bottom: 5px;
+          }
+        }
+        &__div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 28px;
+            @include media($md){
+                margin-bottom: 8px;
+            }
+        }
+        &__num{
+            font-family: $grap;
+            font-weight: 700;
+            color: var(--black);
+            font-size: 74px;
+            margin-right: 10px;
+            @include media($md){
+                font-size: 20px;
+                margin-right: 3px;
+            }
+        }
+        &__price{
+            font-family: $grap;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--black);
+        }
+        &__time{
+            font-family: $grap;
+            color: var(--gray);
+        }
+        &__client{
+            font-family: $grap;
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: var(--gray);
+            @include media($md){
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

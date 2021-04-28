@@ -1,0 +1,42 @@
+section.feature
+ .container
+  h2.title Features
+  p.text Most calendars are designed for teams. Slate is  designed for freelancers
+  .feature__grids 
+   .feature__grid
+    i.fas.feature__icon-draw 
+    h5.feature__grid__title OpenType features Variable fonts
+    p.feature__grid__text Slate helps you see how many more days you need to work to reach your financial goal.
+   .feature__grid
+    i.fal.feature__icon-pen 
+    h5.feature__grid__title Design with real data
+    p.feature__grid__text Slate helps you see how many more days you need to work to reach your financial goal.
+   .feature__grid
+    i.fal.feature__icon-brush
+    h5.feature__grid__title Fastest way to take action
+    p.feature__grid__text Slate helps you see how many more days you need to work to reach your financial goal.
+  .feature__videos
+   video(src="video/video.mp4" poster="images/video__bg.webp").feature__video
+   button.fal.feature__videos__close
+   p.feature__videos__speed 
+   i.fas.feature__videos__icon
+   .feature__controls
+    .feature__controls__top 
+     output.feature__controls__time#current 0:00:00
+     .feature__controls__line 
+      .feature__controls__progress
+      .feature__controls__progress-ruler
+     output.feature__controls__time#duration 0:00:00
+    .feature__controls__bottom
+     button.fas.feature__controls__bottom__restart
+     button.far.feature__controls__bottom__prev-speed
+     button.far.feature__controls__bottom__prev#prev
+     button.fad.feature__controls__bottom__play
+     button.far.feature__controls__bottom__next#next
+     button.far.feature__controls__bottom__next-speed
+     .feature__controls-volume
+      button.feature__controls-volume__icon.fal.up
+      .feature__controls-volume__line
+       .feature__controls-volume__progress
+       button.feature__controls-volume__ruler
+      //- input(id="volume" type="range").feature__controls-volume__range

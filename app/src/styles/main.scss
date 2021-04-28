@@ -1,0 +1,60 @@
+@import 'layout/var',
+        'layout/font',
+        'layout/header',
+        'components/feature',
+        'components/organize',
+        'components/partner',
+        'components/testimontal',
+        'components/pricing',
+        'components/contact',
+        'layout/footer';
+        
+        
+        
+.button{
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    &:hover{
+        background: white;
+        border: 3px solid var(--blue);
+        .button__link{
+            color: var(--blue);
+        }
+    }
+}
+.button__link{
+    font-family: $grap;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.title{
+    font-family: $grap;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 27px;
+    color: var(--black);
+}
+.text{
+    width: 480px;
+    margin: auto;
+    font-family: $grap;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 95px;
+    color: var(--gray);
+    @include media($md){
+        width: 290px;
+    }
+}
